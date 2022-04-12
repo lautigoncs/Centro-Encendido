@@ -1,49 +1,79 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Carrito - Centro Encendido</title>
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-    <link rel="stylesheet" href="../styles/pages/inicio.css">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-</head>
 
-<body>
-    <header id="header">
-        <a href="../index.html" class="nodeco"><img src="../assets/img/logos/centro-logo.png" id="logo" alt="Logo de Centro Encendido"></a>
-        <ul id="menu"> <!--Menú navegable-->
-            <span><a href="../pages/iniciar.html" class="nodeco" id="login">Iniciar Sesión</a></span> 
-            <span><a href="../pages/nosotros.html" class="nodeco" id="abt">Sobre Nosotros</a></span>
-            <span><a href="../pages/productos.html" class="nodeco" id="prod">Productos</a></span>
-            <span><a href="../pages/carrito.html" class="nodeco" id="carr">Carrito</a></span>
-        </ul>
-    </header>
-    <main>
-        <div id="main-block">
-            <h1 id="titulo">Iniciar Sesión</h1>
-            <p class="aclaracion">Si querés que datos como tu carrito, productos favoritos y otros se guarden para la próxima que entres al sitio, debes tener una cuenta creada e iniciada.</p>
-            <section id="iniciar">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesion - Centro Encendido</title>
+        <link rel="stylesheet" href="../styles/estilo.css">
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    </head>
+    <body id="sesion-body">
+        <header class="header-grid">
+            <!--Menu navegable-->
+            <div id="menu">
+                <a><img src="../assets/img/logos/menu.png" alt="menu logo" id="menu-ico"></a>
+                <span><a href="iniciar.html" id="login">Iniciar Sesion</a></span>
+                <span><a href="nosotros.html" id="contact">Contacto</a></span>
+                <span><a href="productos.html" id="prod">Productos</a></span>
+                <span><a href="carrito.html" id="s-list">Carrito</a></span>
+            </div>
+            <div id="logo-flex">
+                <div><a href="../index.html" class="nodeco" id="logo">
+                    <img src="../assets/img/logos/centro-logo.png" id="logo" alt="Logo de Centro Encendido"></a>
+                </div>
+            </div>
+            <div id="buscar">
+                <input type="text"  placeholder="Buscar" id="srch-input" maxlength="100">
+                <input type="image" src="../assets/img/logos/search.png" id="srch-srch">
+                <a href="../pages/iniciar.html"><img src="../assets/img/logos/user.png" id="icon-user"></a>
+            </div>
+        </header>
+    <main id="main-grid-sesion">
+        <div id="sesion-main-block">
+            <h1 class="titulo-main">Iniciar Sesión</h1>
+            <p id="sesion-aclaracion">Si querés que datos como tu carrito, productos favoritos y otros se guarden para la próxima que entres al sitio, debes tener una cuenta creada e iniciada.</p>
+            <section id="sesion-iniciar">
                 <form action="">
-                    <input type="text" name="name" placeholder="Nombre de Usuario" class="datos" required> <br><br>
-                    <input type="password" name="password" placeholder="Contraseña" class="datos" required> <br><br>
-                    <a class="frgt" href="https://www.google.com/search?q=como+recordar+una+contrase%C3%B1a">¿Olvidaste tu contraseña?</a>
-                    <input type="submit" value="Iniciar Sesión" class="login">
-                <p class="registro"> ¿No estás <b>registrado?</b> ¡Hacelo <a href="registrar.html">acá</a>!</p>
-            </form>
+                    <div id="top-session">
+                        <input type="text" name="name" placeholder="Nombre de Usuario" class="sesion-datos" required>
+                        <input type="password" name="password" placeholder="Contraseña" class="sesion-datos" required>
+                        <input type="submit" value="Iniciar Sesión" id="login-input">
+                    </div>
+                    <div id="bottom-sesion">
+                    <a href="https://www.google.com/search?q=como+recordar+una+contrase%C3%B1a" class="sc-name">¿Olvidaste tu contraseña?</a>
+                        <p class="registro-sesion"> ¿No estás <b>registrado?</b> ¡Hacelo <a href="registrar.html" class="sc-name">acá</a>!</p>
+                    </div>
+                </form>
         </section>
         </div>
     </main>
     <footer>
-        <p id="footer-txt">pie de página - &copy;2022 - desarrollado por @lauti.goncs</p>
-        <section id="redes">
-            <p id="footer-txt" class="seguinos">¡Seguínos!</p>
-            <img src="../assets/logos/ig-logo-white.png" alt="Logo de Instagram" class="socials">
-            <a href="https://www.instagram.com/centro.encendido" class="nodeco">Instagram</a><br>
-            <img src="../assets/logos/fb-logo-white.png" alt="Logo de Facebook" class="socials">
-            <a href="https://www.facebook.com/centroencendidotemperley" class="nodeco">Facebook</a><br>
-            <img src="../assets/logos/yt-logo-white.png" alt="Logo de YouTube" class="socials">
-            <a href="https://www.youtube.com/channel/centro.encendido" class="nodeco">YouTube</a><br>
-        </section>  
-    </footer>
-</body>
-</html>
+        <!--------------------------------------------->
+                <section id="secciones">
+                    <ul id="secciones-flex-padre">
+                        <li><a href="iniciar.html" class="sc-name">Iniciar Sesión</a></li>
+                        <li><a href="nosotros.html" class="sc-name">Contacto</a></li>
+                        <li><a href="productos.html" class="sc-name">Productos</a></li>
+                        <li><a href="carrito.html" class="sc-name">Carritos</a></li>
+                    </ul>
+                </section>
+        <!--------------------------------------------->
+                <section id="redes">
+                    <img src="../assets/img/logos/ig-logo-white.png" alt="Logo de Instagram" class="socials">
+                    <a href="https://www.instagram.com/centro.encendido" class="sc-name"> Instagram</a>
+                    <img src="../assets/img/logos/fb-logo-white.png" alt="Logo de Facebook" class="socials">
+                    <a href="https://www.facebook.com/centroencendidotemperley" class="sc-name"> Facebook</a>
+                    <img src="../assets/img/logos/yt-logo-white.png" alt="Logo de YouTube" class="socials">
+                    <a href="https://www.youtube.com/channel/centro.encendido" class="sc-name">YouTube</a>
+                </div>
+                </section>
+        <!--------------------------------------------->
+                <div id="footer-txt-padre">
+                    <p class="footer-txt" id="footer-copyright"> &copy;2022 Todos los derechos reservados </p> <p class="footer-txt"> Desarrollado por <a href="http://www.instagram.com/lauti.goncs" class="sc-name">Lautaro Goncalves</a></p>
+                </div>
+        <!--------------------------------------------->
+            </footer>
+        </body>
+        </html>
+        
