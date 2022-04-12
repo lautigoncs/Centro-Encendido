@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap');
+
+
+body {
+    background: linear-gradient(0deg, rgb(204, 239, 255) 20%, rgb(131, 131, 131) 100%);
+    font-family: Prompt, Arial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Header + Menú */
+#header {
+    background: linear-gradient(0deg, rgba(71,198,255,1) 0%, rgb(21, 140, 196) 100%);
+    padding: 68px 20px 78px 20px;
+    box-shadow: 0px 0px 40px;
+}
+
+#logo {
+    width: 414px;
+    height: 112px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 17px;
+}
+
+#logo:hover {
+    box-shadow: 0px 0px 50px darkblue;
+}
+
+#menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 150px;
+}
+
+.nodeco {
+    text-decoration: none;
+}
+
+#abt, #prod, #carr {
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+
+#prod:hover, #abt:hover, #carr:hover, #login:hover { 
+    color: #0077d8;
+    text-decoration:overline;
+}
+
+/* Contenido de página*/
+
+#titulo {
+    font: lighter;
+    text-align: center;
+    font-size: 75px;
+    text-shadow: 0px 0px 20px #002635;
+    color: white;
+    margin: 40px;
+}  
+
+#titulo:hover {
+    color: rgb(211, 255, 255);
+}  
+
+#carrito {
+    background-color: #fff;
+    margin: 7%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    opacity: 95%;
+    position: relative;
+    bottom: 90px;
+}
+
+.estado {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 35%;
+    bottom: 30%;
+}
+
+#opciones {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border-right: solid 2px black;
+    padding: 2%;
+
+}
+
+.inline {
+    display: inline;
+}
+
+.opcion {
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(31, 31, 31);
+    outline: 2px solid rgb(10, 10, 10);
+    height: 70px;
+    margin: 100px 0 0 ;
+    padding: 10px;
+    font-style: italic;
+    box-shadow: 0px 0px 20px;
+}
+
+#footer-txt {
+    position: absolute;
+    color: rgb(221, 221, 221);
+}
+
+#redes {
+    text-align-last: right;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+}
+
+.seguinos {
+    text-align-last: right;
+    right: 140px;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap');
+
+
+body {
+    background-image: url(../../assets/img/bgb.png); 
+    font-family: Prompt, Arial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Header + Menú */
+#header {
+    background: linear-gradient(0deg, rgba(71,198,255,1) 0%, rgb(21, 140, 196) 100%);
+    padding: 68px 20px 78px 20px;
+    box-shadow: 0px 0px 40px;
+}
+
+#logo {
+    width: 414px;
+    height: 112px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 17px;
+}
+
+#logo:hover {
+    box-shadow: 0px 0px 50px darkblue;
+}
+
+#menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 150px;
+}
+
+.nodeco {
+    text-decoration: none;
+}
+
+#abt, #prod, #carr {
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+
+#prod:hover, #abt:hover, #carr:hover, #login:hover { 
+    color: #0077d8;
+    text-decoration:overline;
+}
+
+/* Contenido de página*/
+
+
+#titulo {
+    font: lighter;
+    text-align: center;
+    font-size: 75px;
+    text-shadow: 0px 0px 20px #002635;
+    color: white;
+    margin: 10px;
+}  
+
+
+#titulo:hover {
+    color: rgb(211, 255, 255);
+}  
+
+
+#main-block {
+    padding: 150px 80px;
+    margin: 10%;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgb(147, 221, 255) 100%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    opacity: 95%;
+    position: relative;
+    bottom: 90px;
+}
+
+.aclaracion {
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+
+.datos {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 40%;
+    padding: 5px;
+}
+
+.frgt {
+    position: absolute;
+   left: 22%;
+   font-size: 11px;
+   padding: 0 0 0 110px;
+}
+
+.login  {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 10%;
+}
+
+.registro {
+    position: absolute;
+    right: 29%;
+
+    font-size: 11px;
+    text-align: right;
+
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(31, 31, 31);
+    outline: 2px solid rgb(10, 10, 10);
+    height: 70px;
+    margin: 100px 0 0 ;
+    padding: 10px;
+    font-style: italic;
+    box-shadow: 0px 0px 20px;
+}
+
+#footer-txt {
+    position: absolute;
+    color: rgb(221, 221, 221);
+}
+
+#redes {
+    text-align-last: right;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+}
+
+.seguinos {
+    text-align-last: right;
+    right: 140px;
+}

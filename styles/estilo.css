@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap');
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+/*  D E S K T O P  */
+
+@media (min-width: 1216px) {
+
+/*Estilos Generales*/
+
+body {
+    background-image: linear-gradient(0deg, #222222 0%, #313131 100%);
+    width: 100%;
+    height: 100vh;
+    font-family: Prompt, Arial;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    z-index: 4;
+}
+ body {
+     height: 100%;
+ }
+/* Header + Menú */
+.header-grid { 
+    background-image: linear-gradient(0deg, #3e76ca 0%, #162e47 100%) ;
+    height: 15%;
+    box-shadow: 0px 0px 40px black;
+    display: grid;
+    grid-template-areas:
+    "menu logo buscar"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#logo {
+    width: 25vw;
+    height: 7vw;
+    grid-area: logo;
+    align-items: center;
+    margin: 10px;
+}
+
+#logo:hover {
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.356));
+}
+
+/*--------------------------------------------*/
+#menu  {
+    grid-area: menu;
+    font-size: 1vw;
+}
+
+#login, #contact, #prod, #s-list {
+    padding: 0px 10px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+#s-list, #prod, #contact {
+    border-left: solid 1px rgb(255, 255, 255);
+}
+
+#s-list:hover, #login:hover, #prod:hover, #contact:hover {
+    color: #b9e0ff;
+    font-weight: 600;
+    border-top: solid 1px #b9e0ff;
+}
+
+/*--------------------------------------------*/
+
+#buscar {
+
+    grid-area: buscar;
+    display: flex;
+    align-items: center;
+}
+
+#srch-input{ 
+    padding: 0 35px;
+    width: 20vw;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+#srch-srch  {
+    margin: 0 0 0 10px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+ /*--------------------NOT-VISIBLE--------------------(ya sé que no es la mejor forma pero no se me ocurre otra xd)*/
+    #icon-user, #menu-ico {
+        position: absolute;
+        bottom: 100%;
+    }
+
+
+/* Contenido de la página */
+
+#foto-main-centro {
+    z-index: -1;
+    width: 100%;
+    height: 25vw;
+    margin: 0;
+    box-shadow: 0px 0px 20px black;
+}
+
+.titulo-main {
+    font-size: 75px;
+    text-shadow: 0px 0px 20px #8edfff;
+    color: rgb(185, 224, 255);
+    text-align: center;
+}
+
+/*---SECCION NOTICIAS---*/
+
+#noticias-padre-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 40px
+}
+
+.noticia { /*Forma y estilos de cada noticia*/
+    height: 480px;
+    width: 300px;
+    background-image: linear-gradient(0deg, rgb(52, 95, 160) 0%, rgb(62, 118, 202) 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgb(14, 0, 75);   
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.foto-noticia {
+    box-shadow: 0px 0px 7px black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.titulo-noticia {
+    text-align: center;
+    margin: 5px;
+    font-size: 30px;
+    text-decoration: underline dashed 2px;
+}
+
+.texto-noticia {
+    text-align: center;
+    font-size: 13px;
+    margin: 0px 8px 5px;
+}
+
+.leermas-noticia {
+    font-size: larger;
+    text-shadow: 0px 0px 7px black;
+    color: #ffff;
+}
+
+/*--Hovers--*/
+
+.leermas-noticia:hover {
+    text-shadow: 0px 0px 20px rgb(144, 170, 255);
+    color: rgb(189, 240, 255);
+}
+
+.titulo-main:hover {
+    text-shadow: 0px 0px 20px rgb(26, 110, 143);
+    color: rgb(26, 110, 143);
+}
+
+/*Footer*/
+
+footer {
+    background-image: linear-gradient(0deg, rgb(52, 95, 160) 0%, rgb(62, 118, 202) 100%);
+    outline: solid 1px #2b518b;
+    box-shadow: 0px 0px 20px;
+    display: grid;
+    grid-template-areas: 
+    "secciones redes"
+    "texto redes";
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr 30px;
+    margin-top: 50px;
+}
+
+#secciones {
+    grid-area: secciones;
+    border-bottom: solid 1px #2b518b;
+}
+
+#secciones-flex-padre {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#redes {
+    grid-area: redes;
+    padding: 20px 30px;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    border-left:  solid 1px #2b518b;
+    border-bottom:  solid 1px #2b518b;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+}
+
+.sc-name {
+    text-decoration: none;
+    color: white;
+}
+
+.sc-name:hover {
+    text-shadow: 0px 0px 20px black;
+    color: rgb(136, 136, 136);
+}
+
+#footer-txt-padre {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom:  solid 1px #2b518b;
+    color: white;
+}
+
+#footer-txt {
+    grid-area: texto;
+    position: absolute;
+}
+
+#footer-copyright {
+    margin-right: 20px;
+}
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1215px) {
+    
+    /*Estilos Generales*/
+    
+
+    body {
+        background-image: linear-gradient(0deg, #222222 0%, #313131 100%);
+        width: 100%;
+        height: 100vh;
+        font-family: Prompt, Arial;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    header {
+        z-index: 4;
+    }
+     body {
+         height: 100%;
+     }
+
+  /*--------------HEADER STYLE + LOGO--------------*/
+    .header-grid { 
+        background-image: linear-gradient(0deg, #3e76ca 0%, #162e47 100%) ;
+        height: 15%;
+        box-shadow: 0px 0px 40px;
+        display: grid;
+        grid-template-areas:
+        "menu logo icons"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    
+    #logo-flex {
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    #logo {
+        width: 25vw;
+        height: 7vw;
+        grid-area: logo;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    
+    #logo:hover {
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.356));
+    }
+    
+    /*-------------------MENU---------------------*/    
+    #menu  {
+        grid-area: menu;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1.2vw;
+    }
+    #login, #contact, #prod, #s-list {
+        padding: 0px 10px;
+        color: white;
+    }
+    
+     #prod, #s-list {
+        border-left: solid 1px white;
+      
+    } 
+    
+    #s-list:hover, #prod:hover, #contact:hover {
+        color: #a8d8ff;
+        font-weight: 600;
+    }
+    
+    /*--------------------ICONS--------------------*/
+    
+    #buscar {
+        grid-area: icons;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: space-around;
+
+    }
+        
+    #srch-srch  {
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    #icon-user {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    /*--------------------NOT-VISIBLE--------------------(ya sé que no es la mejor forma pero no se me ocurre otra xd)*/
+    #srch-input, #login, #menu-ico { 
+        position: absolute;
+        bottom: 100%;
+    } 
+/* Contenido de la página */
+
+#foto-main-centro {
+    z-index: -1;
+    width: 100%;
+    height: 25vw;
+    margin: 0;
+    box-shadow: 0px 0px 20px black;
+}
+
+.titulo-main {
+    font-size: 7vw;
+    text-shadow: 0px 0px 20px #8edfff;
+    color: rgb(185, 224, 255);
+    text-align: center;
+}
+
+/*---SECCION NOTICIAS---*/
+
+#noticias-padre-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 40px
+}
+
+.noticia { /*Forma y estilos de cada noticia*/
+    height: 480px;
+    width: 300px;
+    background-image: linear-gradient(0deg, rgb(52, 95, 160) 0%, rgb(62, 118, 202) 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgb(14, 0, 75);   
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.foto-noticia {
+    box-shadow: 0px 0px 7px black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.titulo-noticia {
+    text-align: center;
+    margin: 5px;
+    font-size: 30px;
+    text-decoration: underline dashed 2px;
+}
+
+.texto-noticia {
+    text-align: center;
+    font-size: 13px;
+    margin: 0px 8px 5px;
+}
+
+.leermas-noticia {
+    font-size: larger;
+    text-shadow: 0px 0px 7px black;
+    color: #ffff;
+}
+
+/*--Hovers--*/
+
+.leermas-noticia:hover {
+    text-shadow: 0px 0px 20px rgb(144, 170, 255);
+    color: rgb(189, 240, 255);
+}
+
+.titulo-main:hover {
+    text-shadow: 0px 0px 20px rgb(26, 110, 143);
+    color: rgb(26, 110, 143);
+}
+
+/*Footer*/
+
+
+footer {
+    background-color: rgb(62, 118, 202);
+    outline: solid 1px #2b518b;
+    box-shadow: 0px 0px 20px;
+    display: grid;
+    grid-template-areas: 
+    "secciones redes"
+    "texto redes";
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr 30px;
+    margin-top: 50px;
+}
+
+#secciones {
+    grid-area: secciones;
+    border-bottom: solid 1px #2b518b;
+}
+
+#secciones-flex-padre {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#redes {
+    grid-area: redes;
+    padding: 20px 30px;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    border-left: solid 1px #2b518b;
+    border-bottom: solid 1px #2b518b;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+    text-anchor: black;
+    
+}
+
+.sc-name {
+    text-decoration: none;
+    color: white;
+}
+
+.sc-name:hover {
+    text-shadow: 0px 0px 20px black;
+    color: rgb(136, 136, 136);
+}
+
+#footer-txt-padre {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom:  solid 1px #2b518b;
+    color: white;
+}
+
+.footer-txt {
+    grid-area: texto;
+    color: white;
+    font-size: 10px;
+}   
+#footer-copyright {
+    border-bottom: solid 1px #2b518b;
+}
+
+}
+
+/*  M O B I L E  */
+@media  (max-width: 419px) {
+    body {
+        background-image: linear-gradient(0deg, #222222 0%, #313131 100%);
+        width: 100%;
+        height: 100%;
+        font-family: Prompt, Arial;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    main {
+        height: 20%;
+    }
+
+
+  /*--------------HEADER STYLE + LOGO--------------*/
+    .header-grid { 
+        background-image: linear-gradient(0deg, #3e76ca 0%, #162e47 100%) ;
+        box-shadow: 0px 0px 40px;
+        display: grid;
+        grid-template-areas:
+        "menu logo icons"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    
+    #logo-flex {
+        display: flex;
+        flex-wrap: nowrap; 
+    }
+
+    #logo {
+        width: 414px;
+        height: 112px;
+        grid-area: logo;
+        align-items: center;
+        object-fit: contain;
+        width: 100%;
+    }
+    
+    #logo:hover {
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.356));
+    }
+    
+    /*-------------------MENU---------------------*/    
+    #menu  {
+        grid-area: menu;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #menu-ico {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*--------------------ICONS--------------------*/
+    
+    #buscar {
+        grid-area: icons;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: space-around;
+    }
+        
+    #srch-srch  {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /*--------------------NOT-VISIBLE--------------------(ya sé que no es la mejor forma pero no se me ocurre otra xd)*/
+    #srch-input, #login, #icon-user, span { 
+        position: absolute;
+        bottom: 100%;
+    } 
+    /* Contenido de la página */
+
+#foto-main-centro {
+    z-index: -1;
+    width: 100%;
+    height: 25vw;
+    margin: 0;
+    box-shadow: 0px 0px 20px black;
+}
+
+.titulo-main {
+    font-size: 7vw;
+    text-shadow: 0px 0px 20px #8edfff;
+    color: rgb(185, 224, 255);
+    text-align: center;
+}
+
+/*---SECCION NOTICIAS---*/
+
+#noticias-padre-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 40px
+}
+
+.noticia { /*Forma y estilos de cada noticia*/
+    height: 450px;
+    width: 140px;
+    background-image: linear-gradient(0deg, rgb(52, 95, 160) 0%, rgb(62, 118, 202) 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgb(14, 0, 75);   
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.foto-noticia {
+    box-shadow: 0px 0px 7px black;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.titulo-noticia {
+    text-align: center;
+    margin: 5px;
+    font-size: 18px;
+    text-decoration: underline dashed 2px;
+}
+
+.texto-noticia {
+    text-align: center;
+    font-size: 12px;
+    margin: 0px 8px 5px;
+}
+
+.leermas-noticia {
+    font-size: 10;
+    text-shadow: 0px 0px 7px black;
+    color: #ffff;
+}
+
+/*--Hovers--*/
+
+.leermas-noticia:hover {
+    text-shadow: 0px 0px 20px rgb(144, 170, 255);
+    color: rgb(189, 240, 255);
+}
+
+.titulo-main:hover {
+    text-shadow: 0px 0px 20px rgb(26, 110, 143);
+    color: rgb(26, 110, 143);
+}
+
+/*Footer*/
+
+
+footer {
+    background-color: rgb(62, 118, 202);
+    outline: solid 1px #2b518b;
+    box-shadow: 0px 0px 20px;
+    display: grid;
+    grid-template-areas: 
+    "secciones redes"
+    "texto redes";
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr 80px;
+}
+
+#secciones {
+    grid-area: secciones;
+    border-bottom: solid 1px #2b518b;
+}
+
+#secciones-flex-padre {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#redes {
+    grid-area: redes;
+    padding: 20px 30px;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    border-left: solid 1px #2b518b;
+    border-bottom: solid 1px #2b518b;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+    text-anchor: black;
+    
+}
+
+.sc-name {
+    text-decoration: none;
+    color: white;
+}
+
+.sc-name:hover {
+    text-shadow: 0px 0px 20px black;
+    color: rgb(117, 204, 255);
+}
+
+#footer-txt-padre {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-copyright {
+    border-bottom: solid 1px black;
+}
+
+.footer-txt {
+    grid-area: texto;
+    color: white;
+    font-size: 10px;
+}   
+}
