@@ -1,69 +1,252 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito - Centro Encendido</title>
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito - Centro Encendido</title>
+    <!--Estilos Propios-->
     <link rel="stylesheet" href="../styles/estilo.css">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-</head>
-<body>
-    <header class="header-grid">
-        <!--Menu navegable-->
-        <div id="menu">
-            <a><img src="../assets/img/logos/menu.png" alt="menu logo" id="menu-ico"></a>
-            <span><a href="iniciar.html" id="login">Iniciar Sesion</a></span>
-            <span><a href="nosotros.html" id="contact">Contacto</a></span>
-            <span><a href="productos.html" id="prod">Productos</a></span>
-            <span><a href="carrito.html" id="s-list">Carrito</a></span>
-        </div>
-        <div id="logo-flex">
-            <div><a href="../index.html" class="nodeco" id="logo">
-                <img src="../assets/img/logos/centro-logo.png" id="logo" alt="Logo de Centro Encendido"></a>
+    
+    <!--Estilos Boostrap Online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    </head>
+    <body>
+        <header class="header-grid shadow-lg ">
+            <!--Menu navegable-->
+            <nav class="nav nav-pills nav-fill startup-anim menu-list" id="menu-dsk-tbl">
+                <a class="nav-link menu-selec" href="iniciar.html">Iniciar Sesion</a> 
+                <a class="nav-link menu-selec" href="nosotros.html">Contacto</a> 
+                <a class="nav-link menu-selec" href="productos.html">Productos</a> 
+                <a class="nav-link menu-selec" href="carrito.html">Carrito</a> 
+              </nav>
+                <div> <!--Pagina principal (logo)-->
+                    <a href="../index.html">
+                    <img src="../assets/img/logos/centro-logo.png" id="logo" dropshadow class="startup-anim dropshadow" alt="Logo de Centro Encendido">
+                    </a>
+                </div>
+            </div> <!--Buscar-->
+            <form class="d-flex startup-anim" id="search-collapse">
+                <input class="form-control me-2 dropshadow srch-input" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark dropshadow srch-input" type="submit">Buscar</button>
+            </form>
+        </header>
+    <main class="d-flex flex-column">
+        <h1 class="titulo-main anim-titulo display-2 m-3">Carrito</h1>
+        <div class="container p-4 mb-5 rounded-3 shadow" id="container-list">
+            <div class="row">
+                <div class="col-3 border-end border-2 border-dark">
+                    <section class=""> <!--especificaciones-->
+                    <h2 class="h3 text-center text-white border-bottom border-1 border-white" id="titulo-specs-main">Especificaciones</h2>
+                    <div class="mb-2"> 
+                        <h2 class="h5 text-center text-white titulo-spec">Especificaciones Técnicas</h2>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <h2 class="h5 text-center text-white border-top border-1 border-white titulo-spec">Modelo</h2>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <h2 class="h5 text-center text-white border-top border-1 border-white titulo-spec">Marca</h2>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="check-selec">
+                            <p class="m-2 mb-0 mt-0 text-white spec">Lorem ipsum </p>
+                        </div>
+                    </div>
+                    </section>
+                 </div>
+                 <div class="col">
+                    <section id="contenido-producto"> <!--lista productos-->
+                        <div class="card mb-3 mt-3 bg-dark text-white shadow" style="max-width: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex align-items-center justify-content-center pt-2 pb-2">
+                                <img src="http://www.placekitten.com/250/150" class="img-fluid rounded-start rounded shadow-lg" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Título de producto</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos quae temporibus earum placeat doloribus alias distinctio ipsam necessitatibus neque! Error deleniti delectus ut corporis sit voluptatem aliquam, explicabo quasi!</p>
+                                  <p class="card-text"><small class="text-muted">$10</small></p>
+                                  <button type="button" class="btn btn-primary">Borrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mb-3 mt-3 bg-dark text-white shadow" style="max-width: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex align-items-center justify-content-center pt-2 pb-2">
+                                <img src="http://www.placekitten.com/250/150" class="img-fluid rounded-start rounded shadow-lg" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Título de producto</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos quae temporibus earum placeat doloribus alias distinctio ipsam necessitatibus neque! Error deleniti delectus ut corporis sit voluptatem aliquam, explicabo quasi!</p>
+                                    <p class="card-text"><small class="text-muted">$10</small></p>
+                                  <button type="button" class="btn btn-primary">Borrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mb-3 mt-3 bg-dark text-white shadow" style="max-width: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex align-items-center justify-content-center pt-2 pb-2">
+                                <img src="http://www.placekitten.com/250/150" class="img-fluid rounded-start rounded shadow-lg" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Título de producto</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos quae temporibus earum placeat doloribus alias distinctio ipsam necessitatibus neque! Error deleniti delectus ut corporis sit voluptatem aliquam, explicabo quasi!</p>
+                                    <p class="card-text"><small class="text-muted">$10</small></p>
+                                  <button type="button" class="btn btn-primary">Borrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mb-3 mt-3 bg-dark text-white shadow" style="max-width: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex align-items-center justify-content-center pt-2 pb-2">
+                                <img src="http://www.placekitten.com/250/150" class="img-fluid rounded-start rounded shadow-lg" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Título de producto</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos quae temporibus earum placeat doloribus alias distinctio ipsam necessitatibus neque! Error deleniti delectus ut corporis sit voluptatem aliquam, explicabo quasi!</p>
+                                    <p class="card-text"><small class="text-muted">$10</small></p>
+                                  <button type="button" class="btn btn-primary">Borrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mb-3 mt-3 bg-dark text-white shadow" style="max-width: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex align-items-center justify-content-center pt-2 pb-2">
+                                <img src="http://www.placekitten.com/250/150" class="img-fluid rounded-start rounded shadow-lg" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Título de producto</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos quae temporibus earum placeat doloribus alias distinctio ipsam necessitatibus neque! Error deleniti delectus ut corporis sit voluptatem aliquam, explicabo quasi!</p>
+                                    <p class="card-text"><small class="text-muted">$10</small></p>
+                                  <button type="button" class="btn btn-primary">Borrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mb-3 mt-3 bg-dark text-white shadow" style="max-width: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex align-items-center justify-content-center pt-2 pb-2">
+                                <img src="http://www.placekitten.com/250/150" class="img-fluid rounded-start rounded shadow-lg" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Título de producto</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos quae temporibus earum placeat doloribus alias distinctio ipsam necessitatibus neque! Error deleniti delectus ut corporis sit voluptatem aliquam, explicabo quasi!</p>
+                                    <p class="card-text"><small class="text-muted">$10</small></p>
+                                  <button type="button" class="btn btn-primary">Borrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                             <div class="border-top border-3 border-dark d-flex justify-content-end align-items-center p-3">
+                                <p class="lead text-white m-0"> Subtotal:<p class="text-white lead m-2 mt-0 mb-0">$60</p></p>
+                                <button type="button" class="btn btn-primary">Checkout ></button>
+                            </div>
+                        </div>
+                    </section>
+                 </div>
             </div>
         </div>
-        <div id="buscar">
-            <input type="text"  placeholder="Buscar" id="srch-input" maxlength="100">
-            <input type="image" src="../assets/img/logos/search.png" id="srch-srch">
-            <a href="../pages/iniciar.html"><img src="../assets/img/logos/user.png" id="icon-user"></a>
-        </div>
-    </header>
-    <main>
-        <h1 class="titulo-main">Carrito</h1>
-        <section id="carrito-flex-padre">
-            <div id="carrito-main-block">
-            <article id="contenido-carrito">
-                <p class="estado">- El carrito está vacío. - </p>
-            </article>
-        </div>
-        </section>
     </main>
     <footer>
-        <!--------------------------------------------->
-                <section id="secciones">
-                    <ul id="secciones-flex-padre">
-                        <li><a href="iniciar.html" class="sc-name">Iniciar Sesión</a></li>
-                        <li><a href="nosotros.html" class="sc-name">Contacto</a></li>
-                        <li><a href="productos.html" class="sc-name">Productos</a></li>
-                        <li><a href="carrito.html" class="sc-name">Carritos</a></li>
-                    </ul>
-                </section>
-        <!--------------------------------------------->
-                <section id="redes">
-                    <img src="../assets/img/logos/ig-logo-white.png" alt="Logo de Instagram" class="socials">
-                    <a href="https://www.instagram.com/centro.encendido" class="sc-name"> Instagram</a>
-                    <img src="../assets/img/logos/fb-logo-white.png" alt="Logo de Facebook" class="socials">
-                    <a href="https://www.facebook.com/centroencendidotemperley" class="sc-name"> Facebook</a>
-                    <img src="../assets/img/logos/yt-logo-white.png" alt="Logo de YouTube" class="socials">
-                    <a href="https://www.youtube.com/channel/centro.encendido" class="sc-name">YouTube</a>
-                </div>
-                </section>
-        <!--------------------------------------------->
-                <div id="footer-txt-padre">
-                    <p class="footer-txt" id="footer-copyright"> &copy;2022 Todos los derechos reservados </p> <p class="footer-txt"> Desarrollado por <a href="http://www.instagram.com/lauti.goncs" class="sc-name">Lautaro Goncalves</a></p>
-                </div>
-        <!--------------------------------------------->
-            </footer>
-        </body>
-        </html>
-        
+        <section id="secciones">
+            <ul id="secciones-flex-padre">
+                <li><a href="pages/iniciar.html" class="sc-name sc-anim">Iniciar Sesión</a></li>
+                <li><a href="pages/nosotros.html" class="sc-name sc-anim">Contacto</a></li>
+                <li><a href="pages/productos.html" class="sc-name sc-anim">Productos</a></li>
+                <li><a href="pages/carrito.html" class="sc-name sc-anim">Carritos</a></li>
+            </ul>
+        </section>
+        <section id="redes">
+            <img src="../assets/img/logos/ig-logo-white.png" alt="Logo de Instagram" class="socials">
+            <a href="https://www.instagram.com/centro.encendido" class="sc-name sc-anim"> Instagram</a>
+            <img src="../assets/img/logos/fb-logo-white.png" alt="Logo de Facebook" class="socials">
+            <a href="https://www.facebook.com/centroencendidotemperley" class="sc-name sc-anim"> Facebook</a>
+            <img src="../assets/img/logos/yt-logo-white.png" alt="Logo de YouTube" class="socials">
+            <a href="https://www.youtube.com/channel/centro.encendido" class="sc-name sc-anim">YouTube</a>
+        </div>
+        </section>
+        <div id="footer-txt-padre">
+            <p class="footer-txt" id="footer-copyright"> &copy;2022 Todos los derechos reservados </p> <p class="footer-txt"> Desarrollado por <a href="http://www.instagram.com/lauti.goncs" class="sc-name sc-anim">Lautaro Goncalves</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

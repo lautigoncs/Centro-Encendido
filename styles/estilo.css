@@ -1,6 +1,7 @@
 /* T O D O  el estilo de la pagina es sujeto a cambio para la proxima entrega del final!*/
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -10,17 +11,13 @@
 body {
     background-image: linear-gradient(0deg, #222222 0%, #313131 100%);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: Prompt, Arial;
 } 
 
 li {
     list-style-type: none;
 }
-
- body {
-     height: 100%;
- }
 
  .dropshadow { /*Sombra hover*/
     transition: all .2s;
@@ -30,7 +27,7 @@ li {
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.336));
 }
 
-/* Header*/
+/* -----Header----- */
 .header-grid { 
     background-image: linear-gradient(0deg, #3e76ca 0%, #162e47 100%) ;
     height: 15%;
@@ -94,17 +91,19 @@ to {
     text-shadow: 0px 0px 20px #8edfff;
     color: rgb(185, 224, 255);
     text-align: center;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .anim-titulo {
     transition: all 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .anim-titulo:hover {
     letter-spacing: 5px;
     color: #2c7ecf;
     text-shadow: 0px 0px 20px #135796 !important; 
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .txt-hs {
@@ -203,6 +202,39 @@ iframe {
 
 #textarea {
     height: 50%;
+}
+
+/*Login - Registrarse */
+
+.bg-login {
+    background-image: url(../assets/img/bgb.png);
+    height: 80vh;
+    background-size: cover;
+}
+
+#info-login-container {
+    width: 80%;
+    height: 80%;
+    backdrop-filter: saturate(185%) blur(25px);
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.input-login {
+    width: 50% !important;
+}
+
+#bottom-login {
+    width: 100%;
+    color: white;
+}
+
+/*Productos */
+#container-list {
+    background-color: rgba(99, 94, 119, 0.082);
+}
+
+.spec {
+    font-size: 100% !important;
 }
 
 /*  D E S K T O P  */
@@ -391,9 +423,28 @@ iframe {
 #textarea {
     height: 50%;
 }
+
+/*Login - Registro*/
+#bottom-login {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+}
+
+.input-login {
+    font-size: 8px;
+}
+
+/*Productos - Carrito*/
+.titulo-spec {
+ font-size: 1.5vw !important;   
+}
+
+#titulo-specs-main {
+    font-size: 2vw !important;   
+}
+
 /*Footer*/
-
-
 footer {
     background-color: rgb(62, 118, 202);
     outline: solid 1px #2b518b;
@@ -470,7 +521,6 @@ footer {
 .sc-anim:hover {
     letter-spacing: 2px;
 }
-
 }
 
 /*  M O B I L E  */
@@ -593,6 +643,29 @@ iframe {
 #textarea {
     height: 50%;
 }
+
+/*Login - Registro*/
+#bottom-login {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.input-login {
+    font-size: 8px;
+}
+
+/*Productos - Carrito*/
+.titulo-spec {
+    font-size: 10px !important;   
+    margin-bottom: 5px !important;
+    font-weight: bolder;
+   }
+   
+#titulo-specs-main {
+    font-size: 10px !important;   
+}
+   
 /*Footer*/
 footer {
     background-color: rgb(62, 118, 202);
