@@ -1,0 +1,42 @@
+.bg-login {
+    background-image: url(../../assets/img/bgb.png);
+    height: 80vh;
+    background-size: cover;
+}
+
+#info-login-container {
+    width: 80%;
+    height: 80%;
+    backdrop-filter: saturate(185%) blur(25px);
+    background-color: rgba(0, 0, 0, 0.349);
+    .input-login {
+        width: 50% !important;
+    }
+    #bottom-login {
+        width: 100%;
+        color: white;
+    }
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+    /*Login - Registro*/
+    #bottom-login {
+        font-size: 15px;
+    }
+    .input-login {
+        font-size: 8px;
+    }   
+}
+
+/*  M O B I L E  */
+@media  (max-width: 419px) {
+    /*Login - Registro*/
+    #bottom-login {
+        font-size: 12px;
+    }
+    
+    .input-login {
+        font-size: 8px;
+    }
+}    

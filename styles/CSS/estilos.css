@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+.titulo-main {
+  font-size: 75px;
+  text-shadow: 0px 0px 20px #8edfff;
+  color: #b9e0ff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.anim-titulo {
+  transition: all 1s;
+  transition-timing-function: ease-in-out;
+}
+.anim-titulo:hover {
+  letter-spacing: 5px;
+  color: #345fa0;
+  text-shadow: 0px 0px 20px #135796 !important;
+}
+
+/*---SECCION NOTICIAS---*/
+#noticias-padre-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 40px;
+}
+#noticias-padre-flex .noticia {
+  /*Forma y estilos de cada noticia*/
+  background-image: linear-gradient(0deg, rgb(56, 56, 56) 0%, rgb(138, 138, 138) 100%);
+  margin: 0.5%;
+  transition: all 0.5s;
+}
+#noticias-padre-flex .noticia:hover {
+  transform: scale(105%);
+  text-shadow: 0px 0px 20px #a8a8a8;
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+  /* Contenido de la página */
+  .noticia {
+    /*Forma y estilos de cada noticia*/
+    margin: 0.5%;
+    transition: all 0.5s;
+    width: 30vw !important;
+  }
+  .noticia:hover {
+    transform: scale(102%);
+    text-shadow: 0px 0px 20px #a8a8a8;
+  }
+}
+/*  M O B I L E  */
+@media (max-width: 419px) {
+  /*---SECCION NOTICIAS---*/
+  .noticia {
+    /*Forma y estilos de cada noticia*/
+    background-image: linear-gradient(0deg, rgb(56, 56, 56) 0%, rgb(138, 138, 138) 100%);
+    margin: 0.5%;
+    transition: all 0.5s;
+    width: 30vw !important;
+  }
+  .noticia:hover {
+    transform: scale(102%);
+    text-shadow: 0px 0px 20px #a8a8a8;
+  }
+}
+/*Productos */
+#container-list {
+  background-color: rgba(99, 94, 119, 0.082);
+}
+
+.spec {
+  font-size: 100% !important;
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+  /*Productos - Carrito*/
+  .titulo-spec {
+    font-size: 1.5vw !important;
+  }
+
+  #titulo-specs-main {
+    font-size: 2vw !important;
+  }
+}
+/*  M O B I L E  */
+@media (max-width: 419px) {
+  /*Productos - Carrito*/
+  .titulo-spec {
+    font-size: 10px !important;
+    margin-bottom: 5px !important;
+  }
+
+  #titulo-specs-main {
+    font-size: 10px !important;
+  }
+}
+.bg-login {
+  background-image: url(../../assets/img/bgb.png);
+  height: 80vh;
+  background-size: cover;
+}
+
+#info-login-container {
+  width: 80%;
+  height: 80%;
+  backdrop-filter: saturate(185%) blur(25px);
+  background-color: rgba(0, 0, 0, 0.349);
+}
+#info-login-container .input-login {
+  width: 50% !important;
+}
+#info-login-container #bottom-login {
+  width: 100%;
+  color: white;
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+  /*Login - Registro*/
+  #bottom-login {
+    font-size: 15px;
+  }
+
+  .input-login {
+    font-size: 8px;
+  }
+}
+/*  M O B I L E  */
+@media (max-width: 419px) {
+  /*Login - Registro*/
+  #bottom-login {
+    font-size: 12px;
+  }
+
+  .input-login {
+    font-size: 8px;
+  }
+}
+/*SECCION CONTACTO*/
+#historia {
+  padding-bottom: 20px;
+  background-image: url(../../assets/img/bgc-hst.png);
+  background-size: cover;
+  box-shadow: 0px 0px 20px black;
+  color: white;
+  max-width: 100%;
+}
+#historia .ph-hs {
+  width: 100%;
+}
+#historia .txt-hs {
+  font-size: 120% !important;
+}
+
+/*Localizacion*/
+#localizacion {
+  background-image: linear-gradient(0deg, #222222 0%, #414141 90%, #1f1f1f 100%);
+  height: 650px;
+  box-shadow: 0px 0px 20px black;
+}
+
+.titulo-loc {
+  font-size: 75px;
+  text-shadow: 0px 0px 20px #8edfff;
+  color: #b9e0ff;
+}
+
+iframe {
+  box-shadow: 0px 0px 20px;
+  border-radius: 5px;
+  width: 90vw;
+}
+
+/*Formulario*/
+#formulario {
+  background-image: linear-gradient(0deg, #0c2135 0%, #222222 100%);
+  height: 60vh;
+  display: grid;
+  align-content: center;
+}
+
+.formularioEstilo {
+  height: 50vh;
+}
+
+.formulario-input {
+  height: 100px;
+  width: 75vw;
+  border: none;
+  background-color: #376ec2;
+  margin: 10px;
+  box-shadow: 0px 0px 10px #132436;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.formulario-input:last-child {
+  color: #b9e0ff;
+  background-color: #2b4f86;
+  width: 25%;
+}
+.formulario-input:focus {
+  color: #345fa0;
+  background-color: #355a92;
+}
+.formulario-input:focus:last-child {
+  background-color: #172f52;
+}
+.formulario-input::placeholder {
+  color: #b9e0ff;
+}
+
+#textarea {
+  height: 50%;
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+  /*Localizacion*/
+  #localizacion {
+    display: flex;
+    height: 600px;
+    box-shadow: 0px 0px 20px black;
+  }
+
+  .titulo-loc {
+    font-size: 5vw;
+  }
+
+  iframe {
+    width: 75vw;
+  }
+}
+/*  M O B I L E  */
+@media (max-width: 419px) {
+  /*Localizacion*/
+  iframe {
+    width: 75vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos Generales*/
+body {
+  background-image: linear-gradient(0deg, #222222 0%, #313131 100%);
+  width: 100%;
+  height: 100%;
+  font-family: Prompt, Arial;
+}
+
+li {
+  list-style-type: none;
+}
+
+.dropshadow {
+  /*Sombra hover*/
+  transition: all 0.2s;
+}
+.dropshadow:hover {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.336));
+}
+
+footer {
+  background-image: linear-gradient(0deg, #345fa0 0%, #376ec2 100%);
+  width: 100%;
+}
+
+/* -----Header----- */
+header {
+  background-image: linear-gradient(0deg, #376ec2 0%, #132436 100%) !important;
+  /*Menu Navegable*/
+}
+header .logoHeader {
+  width: 250px;
+}
+header .menu-selec {
+  color: #fff !important;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+header .menu-selec:hover {
+  color: #b9e0ff !important;
+  text-shadow: 0px 0px 5px black;
+}
+
+/*ANIMACIONES*/
+.startup-anim {
+  animation-name: startup;
+  animation-duration: 1s;
+}
+
+@keyframes startup {
+  from {
+    transform: translateY(-50px);
+    opacity: 5%;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+  .menu-selec {
+    font-size: 1px;
+  }
+}
+/*  M O B I L E  */
+@media (max-width: 419px) {
+  /*Header*/
+  .menu-selec {
+    font-size: 12px;
+  }
+
+  .logoHeader {
+    width: 150px;
+  }
+
+  /*Footer*/
+  .copy-txt {
+    font-size: 4vw;
+  }
+
+  .logoFooter {
+    width: 90% !important;
+  }
+
+  .socials {
+    font-size: 4vw;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

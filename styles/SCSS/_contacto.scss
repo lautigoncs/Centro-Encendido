@@ -1,0 +1,104 @@
+/*SECCION CONTACTO*/
+#historia {
+    padding-bottom: 20px;
+    background-image: url(../../assets/img/bgc-hst.png);
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+    color: white;
+    max-width: 100%;
+    .ph-hs {
+        width: 100%;
+    }
+    .txt-hs {
+        font-size: 120% !important;
+    }
+}
+
+/*Localizacion*/
+#localizacion {
+    background-image: linear-gradient(0deg, #222222 0%, #414141 90%, #1f1f1f 100%);
+    height: 650px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.titulo-loc {
+    font-size: 75px;
+    text-shadow: 0px 0px 20px #8edfff;
+    color: $celeste-light;
+}
+
+iframe {
+    box-shadow: 0px 0px 20px;
+    border-radius: 5px;
+    width: 90vw;
+}
+
+/*Formulario*/
+#formulario {
+    background-image: linear-gradient(0deg, #0c2135 0%, #222222 100%);
+    height: 60vh;
+    display: grid;
+    align-content: center;
+}
+
+.formularioEstilo {
+    height: 50vh;
+}    
+
+.formulario-input {
+    height: 100px;
+    width: 75vw;
+    border: none;
+    background-color: $celeste;
+    margin: 10px;
+    box-shadow: 0px 0px 10px $celeste-darker;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    &:last-child {
+        color: $celeste-light;
+        background-color: #2b4f86;
+        width: 25%;
+    }
+    &:focus {
+        color: $celeste-dark;
+        background-color: #355a92;
+        &:last-child {
+            background-color: #172f52;
+        }
+    }
+    &::placeholder {
+        color: $celeste-light;
+    }
+}
+
+#textarea {
+    height: 50%;
+}
+
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+    /*Localizacion*/
+    #localizacion {
+        display: flex;
+        height: 600px;
+        box-shadow: 0px 0px 20px black;
+    }
+    
+    .titulo-loc {
+        font-size: 5vw;
+    }
+    
+    iframe {
+        width: 75vw;
+    }
+}
+
+/*  M O B I L E  */
+@media  (max-width: 419px) {
+    /*Localizacion*/
+    iframe {
+        width: 75vw;
+    }
+}    

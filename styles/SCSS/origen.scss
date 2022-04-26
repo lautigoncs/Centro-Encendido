@@ -1,0 +1,107 @@
+// VARIABLES
+$celeste: #376ec2;
+$celeste-dark: #345fa0;
+$celeste-darker: #132436;
+$celeste-light: #b9e0ff;
+
+// IMPORT
+@import "noticias";
+@import "productos";
+@import "user";
+@import "contacto";
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+//ESTILOS GENERALES 
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos Generales*/
+body {
+    background-image: linear-gradient(0deg, #222222 0%, #313131 100%);
+    width: 100%;
+    height: 100%;
+    font-family: Prompt, Arial;
+} 
+
+li {
+    list-style-type: none;
+}
+
+.dropshadow { /*Sombra hover*/
+    transition: all .2s;
+    &:hover {
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.336));
+    }
+}
+
+footer {
+    background-image: linear-gradient(0deg, $celeste-dark 0%, $celeste 100%);
+    width: 100%;
+}
+
+/* -----Header----- */
+header { 
+    background-image: linear-gradient(0deg, $celeste 0%, $celeste-darker 100%) !important;
+    .logoHeader {
+        width: 250px;
+    }
+    /*Menu Navegable*/
+    .menu-selec {
+        color: #fff !important;
+        font-size: 18px;
+        transition: all .2s;
+        &:hover {
+            color: $celeste-light !important;
+            text-shadow: 0px 0px 5px black;
+        }    
+    }
+}
+/*ANIMACIONES*/
+.startup-anim {
+    animation-name: startup;
+    animation-duration: 1s;
+}
+
+@keyframes startup {
+from {
+    transform: translateY(-50px);
+    opacity: 5%;
+}
+to {
+    transform: translateY(0);
+}
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+    .menu-selec {
+        font-size: 1px;
+    }
+}
+
+/*  M O B I L E  */
+@media  (max-width: 419px) {
+    /*Header*/
+    .menu-selec {
+        font-size: 12px;
+    }
+    
+    .logoHeader {
+        width: 150px;
+    }
+    /*Footer*/
+    .copy-txt {
+        font-size: 4vw ;
+    }
+    .logoFooter {
+        width: 90% !important;
+    }
+
+    .socials {
+        font-size: 4vw ;
+
+}
+}

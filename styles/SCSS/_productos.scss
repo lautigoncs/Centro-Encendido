@@ -1,0 +1,33 @@
+/*Productos */
+#container-list {
+    background-color: rgba(99, 94, 119, 0.082);
+}
+
+.spec {
+    font-size: 100% !important;
+}
+
+/*  T A B L E T  */
+@media (min-width: 420px) and (max-width: 1199px) {
+    /*Productos - Carrito*/
+    .titulo-spec {
+     font-size: 1.5vw !important;   
+    }
+    
+    #titulo-specs-main {
+        font-size: 2vw !important;   
+    }
+    }
+
+/*  M O B I L E  */
+@media  (max-width: 419px) {
+    /*Productos - Carrito*/
+    .titulo-spec {
+        font-size: 10px !important;   
+        margin-bottom: 5px !important;
+       }
+       
+    #titulo-specs-main {
+        font-size: 10px !important;   
+    }
+}    
