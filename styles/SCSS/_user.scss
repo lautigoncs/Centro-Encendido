@@ -1,12 +1,11 @@
 .bg-login {
-    background-image: url(../../assets/img/bgb.png);
+    background-image: url(../../assets/img/bgb.jpg);
     height: 80vh;
     background-size: cover;
 }
 
 #info-login-container {
-    width: 80%;
-    height: 80%;
+    @include hw (80%, 80%);
     backdrop-filter: saturate(185%) blur(25px);
     background-color: rgba(0, 0, 0, 0.349);
     .input-login {

@@ -1,9 +1,6 @@
-.titulo-main {
-    font-size: 75px;
-    text-shadow: 0px 0px 20px #8edfff;
-    color: $celeste-light;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif !important;
+.titulo-noticias {
+@extend .titulo-main;
+font-size: 75px !important;
 }
 
 .anim-titulo {

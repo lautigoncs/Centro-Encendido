@@ -1,7 +1,17 @@
-/*SECCION CONTACTO*/
+.titulo-nosotros {
+    @extend .titulo-main;
+    font-size: 50px !important;
+    }
+
+.titulo-localizacion {
+    @extend .titulo-main;
+    font-size: 55px !important;
+    }
+
+
 #historia {
     padding-bottom: 20px;
-    background-image: url(../../assets/img/bgc-hst.png);
+    background-image: url(../../assets/img/bgc-hst.jpg);
     background-size: cover;
     box-shadow: 0px 0px 20px black;
     color: white;
@@ -45,9 +55,8 @@ iframe {
     height: 50vh;
 }    
 
-.formulario-input {
-    height: 100px;
-    width: 75vw;
+.formulario-input { 
+    @include hw (100px, 75vw);
     border: none;
     background-color: $celeste;
     margin: 10px;

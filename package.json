@@ -1,0 +1,30 @@
+{
+  "name": "centroencendido",
+  "version": "1.0.0",
+  "description": "Centro Encendido es la empresa de repuestos de encendido en coches más elegida en Temperley. Esta es su página oficial, en esta es posible comprar hasta aprender sobre nuestra historia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lautigoncs/Centro-Encendido.git"
+  },
+  "author": "Lautaro Goncalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lautigoncs/Centro-Encendido/issues"
+  },
+  "homepage": "https://github.com/lautigoncs/Centro-Encendido#readme",
+  "keywords": [
+    "CENTRO",
+    "ENCENDIDO",
+    "TEMPERLEY",
+    "AUTOMOTOR",
+    "REPARACIÓN",
+    "REPUESTOS",
+    "COCHES",
+    "AUTOS",
+    "TIENDA"
+  ]
+}
